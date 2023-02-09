@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layouts</title>
+     <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            background-color: rgb(202, 115, 81);
+            padding: 30px;
+            text-align: center;
+            font-size: 70%;
+            color: rgb(88, 9, 6);
+            font-family: 'Times New Roman', Times, serif;
+        }
+        nav{
+            float: left;
+            width: 30%;
+            height: 300px;
+            background-color: rgb(182, 104, 69);
+            padding: 20px;
+        }
+        nav ul{
+            list-style: none;
+            padding: 0;
+        }
+        article{
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: rgb(121, 45, 61);
+            height: 300px;
+        }
+        section ::after{
+            content: "" ;
+            display: table;
+            clear: both;
+        }
+        footer{
+            background-color: rgb(128, 65, 201);
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        @media(max-width: 600px){
+        nav, article{
+            width: 100%;
+            height: auto;
+        }
+    }
+
+     </style>
+</head>
+<body>
+    <header>
+        <h1>Megadeth</h1>
+    </header>
+         <section>
+        <nav>
+            <ul>
+                <li> <a href="https://es.wikipedia.org/wiki/Megadeth"> Biografia</a></li>
+                <li> <a href="https://www.youtube.com/watch?v=S_1dHzlWzns"> Mejor cancion</a></li>
+                <li> <a href="https://www.discogs.com/es/artist/11770-Megadeth"> Discografia</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h1>no</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero deleniti ab temporibus obcaecati magnam quaerat repudiandae reprehenderit delectus ex? Tempore sequi similique sunt neque eos? Sapiente, voluptatum atque? Doloribus, cupiditate.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum animi voluptatibus quos maiores magni aut possimus atque doloremque debitis ipsa iure earum quam laudantium, distinctio laboriosam suscipit itaque soluta a?</p>
+        </article>
+    </section>
+     <footer>
+        <h3>Gael Johnadab Espinoza Echeagaray 8/Febrero/2023 practica 3 MEGADETH</h3>
+     
+    </footer>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Registro de Alumno</title>
+    <style>
+        .head{
+            text-align: center;
+            font-size: 26pxm,olmkpo;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">Registro de Alumno</div>
+    <form action="practica2.php" method="GET">
+        <div class="form-group">
+            <label for="">Nombre</label>
+            <input type="text" name="Nombre" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="">Edad</label>
+            <input type="number" name="Edad" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="">Escuela</label>
+            <select name="Escuela">
+                <option value="">Seleccione una Escuela</option>
+                <option value="CETis107">CETis107</option>
+                <option value="CBTis224">CBTis224</option>
+                <option value="COBAES">COBAES</option>
+            </select>
+        </div><br><br><br>
+        <div class="form-group">
+            <label for="">Fecha de Ingreso</label>
+            <input type="date" name="fecha_ingreso" class="form-group">
+        </div><br>
+        <div class="form-group">
+            <label for="">Direccion</label>
+            <textarea name="direccion" class="form-control" cols="30" rows="4"></textarea>
+        </div><br>
+        <div>
+            <input type="submit" class="btn btn-primary">
+        </div>
+    </form>
+</body>
+</html>
